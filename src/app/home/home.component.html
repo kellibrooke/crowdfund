@@ -1,0 +1,8 @@
+<div *ngFor="let fund of funds | async">
+  <p>{{fund.title}}</p>
+</div>
+<div *ngFor="let patron of patrons | async">
+  <p>{{patron.name}}</p>
+</div>
+
+<a routerLink="new-fund">Create New Fund</a>

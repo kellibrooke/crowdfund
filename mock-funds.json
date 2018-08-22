@@ -1,0 +1,32 @@
+{ "funds": [{
+    "title": "Stephanie's Veneer Fund",
+    "goalAmount": 4500,
+    "description": "Trying to get laid",
+    "contact": "Stephanie",
+    "levels": [
+      "Baby Shark",
+      "Mama Shark",
+      "Papa Shark",
+      "Grandma Shark"
+      ],
+    "category": "cosmetic"
+    }
+  ],
+ "patrons": [{
+    "name": "Johnabee Jones",
+    "donations": [
+      {
+      "fundId": 0,
+      "amount": 200,
+      "level": "Mama Shark"
+      },
+      {
+      "fundId": 0,
+      "amount": 220,
+      "level": "Mama Shark"
+      }
+    ],
+    "role": "user"
+    }
+  ]
+}
