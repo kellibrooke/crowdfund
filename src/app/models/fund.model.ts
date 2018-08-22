@@ -1,4 +1,6 @@
 export class Fund {
+  public currentAmount: string = "0";
+  
   constructor(
     public title: string,
     public goalAmount: string,
@@ -6,5 +8,5 @@ export class Fund {
     public contact: string,
     public levels: string[],
     public category: string
-  ) {}
+  ) {  }
 }
