@@ -18,7 +18,7 @@
   <div class="form-group">
     <label for="levels">Enter A Level</label>
     <input type="text" class="form-control" #level>
-    <button (click)="addLevel(level.value); level.value = ''" class="btn btn-info" id="add-level">Add New Level</button>
+    <button (click)="addLevel(level.value); level.value = ''" class="btn btn-info levelAdd" id="add-level">Add New Level</button>
     <div id="level-area">
       <p *ngFor="let level of levels">
       {{level}}

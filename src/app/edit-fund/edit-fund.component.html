@@ -19,10 +19,12 @@
     <div class="form-group">
       <label>Edit Levels</label>
       <ul>
-        <li *ngFor="let level of (fund | async)?.levels">
-          <p>{{level}}<button class="btn btn-danger" (click)="deleteLevel(level)">X</button></p>
+        <li *ngFor="let level of tempLevelArray">
+          <p>{{level}}<button class="btn btn-danger levelDelete" (click)="deleteLevel(level)">X</button></p>
         </li>
       </ul>
+      <input type="text" class="form-control" #level>
+      <button (click)="addLevel(level.value); level.value = ''" class="btn btn-info levelAdd" id="add-level">Add New Level</button>
     </div>
     <div class="form-group">
       <label for="category">Edit Category:</label>
