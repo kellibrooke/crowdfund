@@ -23,4 +23,14 @@ export class FundDetailsComponent implements OnInit {
   this.fund = this.crowdfundService.getFundById(this.fundId)
   }
 
+  deleteFund() {
+    let fundInDatabase = this.crowdfundService.getFundById(this.fundId);
+    fundInDatabase.remove();
+    this.router.navigate(['']);
+  }
+
+  goToEdit() {
+    this.router.navigate(['funds', this.fundId, "edit"]);
+  }
+
 }

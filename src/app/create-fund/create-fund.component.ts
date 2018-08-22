@@ -28,7 +28,6 @@ export class CreateFundComponent implements OnInit {
 
   addLevel(level:string){
   this.levels.push(level);
-  console.log(this.levels);
   }
 
 }

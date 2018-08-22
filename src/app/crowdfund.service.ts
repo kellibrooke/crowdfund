@@ -30,4 +30,10 @@ export class CrowdfundService {
     return this.database.object('funds/' + fundId);
   }
 
+  getLevelByIndex(index, fundId) {
+    console.log(fundId);
+    console.log(index);
+    return this.database.object('funds/' + fundId + '/levels/' + index)
+  }
+
 }

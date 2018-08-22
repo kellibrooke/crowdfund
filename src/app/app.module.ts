@@ -10,6 +10,7 @@ import { routing } from './app.routing';
 import { HomeComponent } from './home/home.component';
 import { CreateFundComponent } from './create-fund/create-fund.component';
 import { FundDetailsComponent } from './fund-details/fund-details.component';
+import { EditFundComponent } from './edit-fund/edit-fund.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -23,7 +24,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     CreateFundComponent,
-    FundDetailsComponent
+    FundDetailsComponent,
+    EditFundComponent
   ],
   imports: [
     BrowserModule,
