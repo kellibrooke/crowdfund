@@ -9,6 +9,7 @@ import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import { HomeComponent } from './home/home.component';
 import { CreateFundComponent } from './create-fund/create-fund.component';
+import { FundDetailsComponent } from './fund-details/fund-details.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +22,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateFundComponent
+    CreateFundComponent,
+    FundDetailsComponent
   ],
   imports: [
     BrowserModule,

@@ -23,4 +23,8 @@ export class HomeComponent implements OnInit {
     this.patrons = this.crowdfundService.getPatrons();
   }
 
+  displayFundDetails(currentFund){
+    this.router.navigate(['funds', currentFund.$key])
+  }
+
 }

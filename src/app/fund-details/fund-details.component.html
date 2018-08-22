@@ -1,0 +1,8 @@
+<p>{{(fund | async)?.title}}</p>
+<p>${{(fund | async)?.goalAmount}}</p>
+<p>{{(fund | async)?.description}}</p>
+<ul>
+  <li *ngFor="let level of (fund | async)?.levels">{{level}}</li>
+</ul>
+<p>{{(fund | async)?.title}}</p>
+<p>{{(fund | async)?.category}}</p>

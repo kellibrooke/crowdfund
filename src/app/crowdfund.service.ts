@@ -26,4 +26,8 @@ export class CrowdfundService {
     this.funds.push(newFund);
   }
 
+  getFundById(fundId){
+    return this.database.object('funds/' + fundId);
+  }
+
 }

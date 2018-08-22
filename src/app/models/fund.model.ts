@@ -4,7 +4,7 @@ export class Fund {
     public goalAmount: string,
     public description: string,
     public contact: string,
-    public levels: string,
+    public levels: string[],
     public category: string
   ) {}
 }

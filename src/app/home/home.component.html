@@ -1,5 +1,5 @@
 <div *ngFor="let fund of funds | async">
-  <p>{{fund.title}}</p>
+  <h3 (click)="displayFundDetails(fund)">{{fund.title}}</h3>
 </div>
 <div *ngFor="let patron of patrons | async">
   <p>{{patron.name}}</p>

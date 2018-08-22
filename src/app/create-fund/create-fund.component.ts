@@ -12,16 +12,23 @@ import { Location } from '@angular/common';
   providers: [ CrowdfundService ]
 })
 export class CreateFundComponent implements OnInit {
+  levels = [];
 
   constructor(private router: Router, private crowdfundService: CrowdfundService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
   }
 
-  createNewFund(title: string, goalAmount: string, description: string, contact: string, levels: string, category: string) {
-    let newFund = new Fund(title, goalAmount, description, contact, levels, category);
+  createNewFund(title: string, goalAmount: string, description: string, contact: string, category: string) {
+    let newFund = new Fund(title, goalAmount, description, contact, this.levels, category);
     this.crowdfundService.addNewFund(newFund);
+    this.levels = [];
     this.router.navigate(['']);
+  }
+
+  addLevel(level:string){
+  this.levels.push(level);
+  console.log(this.levels);
   }
 
 }
